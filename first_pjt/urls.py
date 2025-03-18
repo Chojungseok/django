@@ -29,5 +29,8 @@ urlpatterns = [
     # 그냥 number을 넣게 되면 str형태로 들어가게 된다. `int:`를 입력하면 django식 int변경 방법
     path('cube/<int:number>', views.cube),
     path('articles/',views.articles),
+    
+    path('ping/', views.ping), # 빈 도화지 역할
+    path('pong/', views.pong), # 사용자의 입력값을 가지고 온다.
 
 ]
